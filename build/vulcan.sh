@@ -53,7 +53,7 @@ cd /tmp/httpd-2.2.23
 ${MAKE_CMD} && ${MAKE_CMD} install
 
 cd /tmp/php-5.3.17
-./configure --prefix=/app/php --with-apxs2=/app/apache/bin/apxs --with-mysql=mysqlnd --with-pdo-mysql=mysqlnd --with-iconv --with-gd --with-curl=/usr/lib --with-config-file-path=/app/php --enable-soap=shared --with-openssl --enable-mbstring --with-mhash --enable-mysqlnd --with-pear --with-mysqli=mysqlnd --disable-cgi --with-jpeg-dir --with-png-dir --with-mcrypt=/app/local --enable-static
+./configure --prefix=/app/php --with-apxs2=/app/apache/bin/apxs --with-zlib --with-mysql=mysqlnd --with-pdo-mysql=mysqlnd --with-iconv --with-gd --with-curl=/usr/lib --with-config-file-path=/app/php --enable-soap=shared --with-openssl --enable-mbstring --with-mhash --enable-mysqlnd --with-pear --with-mysqli=mysqlnd --disable-cgi --with-jpeg-dir --with-png-dir --with-mcrypt=/app/local --enable-static
 ${MAKE_CMD} && ${MAKE_CMD} install
 
 /app/php/bin/pear config-set php_dir /app/php
