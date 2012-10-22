@@ -5,12 +5,11 @@
 set -e
 
 # config
-APACHE_VERSION="2.2.23"
+APACHE_VERSION="2.2.23" # this is just for documentation and text output
 APACHE_PATH="apache"
-PHP_VERSION="5.3.17"
+PHP_VERSION="5.3.17" # this is just for documentation and text output
 PHP_PATH="php"
-BUILDPACK_VERSION="0.1"
-
+BUILDPACK_VERSION="0.1" # this is functional (will change the URL the buildpack is fetched from)
 
 BIN_DIR=$(dirname $0)
 BUILD_DIR=$1
@@ -32,8 +31,7 @@ if [ -f www/Procfile ]; then
   mv www/Procfile .
 fi
 
-#BP_URL="https://s3.amazonaws.com/licorice-labs-buildpacks/apache-$APACHE_VERSION-php-$PHP_VERSION-v$BUILDPACK_VERSION.tar.gz"
-BP_URL="http://tools.foundryinteractive.com/heroku/build.tgz"
+BP_URL="http://tools.foundryinteractive.com/heroku/php_buildpack_binaries-$BUILDPACK_VERSION.tar.gz"
 echo "-----> Bundling Apache $APACHE_VERSION PHP $PHP_VERSION build $BUILDPACK_VERSION"
 curl --silent --max-time 60 --location "$BP_URL" | tar xz
 
