@@ -31,7 +31,7 @@ if [ -f www/Procfile ]; then
   mv www/Procfile .
 fi
 
-BP_URL="http://tools.foundryinteractive.com/heroku/php_buildpack_binaries-$BUILDPACK_VERSION.tar.gz"
+BP_URL="https://s3.amazonaws.com/foundry-heroku-buildpack/php_buildpack_binaries-$BUILDPACK_VERSION.tar.gz"
 echo "-----> Bundling Apache $APACHE_VERSION PHP $PHP_VERSION build $BUILDPACK_VERSION"
 curl --silent --max-time 60 --location "$BP_URL" | tar xz
 
