@@ -30,6 +30,6 @@ To change this buildpack, fork it on Github. Push up changes to your fork, then 
 Meta
 ----
 
-Original buildpack by Pedro Belo. https://github.com/heroku/heroku-buildpack-php
-Modified buildpack using vulcan by winglian@github. https://github.com/winglian/heroku-buildpack-php
-Further modified for Wordpress by Andrew Gorcester and Foundry interactive. https://github.com/andrewsg/heroku-buildpack-php-winglian
+* Original buildpack by Pedro Belo. https://github.com/heroku/heroku-buildpack-php
+* Modified buildpack using vulcan by winglian@github. https://github.com/winglian/heroku-buildpack-php
+* Further modified for Wordpress by Andrew Gorcester and Foundry Interactive. https://github.com/andrewsg/heroku-buildpack-php-winglian
